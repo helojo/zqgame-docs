@@ -1,0 +1,32 @@
+{
+  "name": "mkdocs2",
+  "version": "1.6.1",
+  "description": "This repo is for mkdocs2 documents.",
+  "main": "index.js",
+  "dependencies": {
+    "commander": "^2.12.2",
+    "del": "^3.0.0",
+    "gitbook-plugin-flow": "^1.1.7",
+    "globby": "^7.1.1",
+    "gulp": "^3.9.1",
+    "gulp-sequence": "^0.4.6",
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "gulp restore-ignore && gulp prebuild && gitbook build && gulp postbuild",
+    "preview": "gulp preview",
+    "upload": "gulp publish --dest /Volumes/mkdocs2/manual",
+    "publish": "npm run build && npm run upload"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitcode.gamelaoyou.com/docs/mkdocs2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitcode.gamelaoyou.com/docs/mkdocs2/issues"
+  },
+  "homepage": "https://gitcode.gamelaoyou.com/docs/mkdocs2#readme"
+}
